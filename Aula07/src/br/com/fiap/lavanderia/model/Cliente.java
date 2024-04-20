@@ -5,6 +5,14 @@ public class Cliente extends Pessoa {
     //atributos
     private boolean assinante;
 
+    //construtor
+    public Cliente(String nome, String cpf, int id, Endereco endereco, boolean assinante) {
+        super(nome, cpf, id, endereco);
+        this.assinante = assinante;
+    }
+
+    public Cliente(){}
+
     //metodos
     public void pagar (double valor) {
         //se for assinate tem 10% de desconto
